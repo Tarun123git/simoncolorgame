@@ -51,11 +51,6 @@ Just pure JavaScript and questionable memory skills.
 
 ---
 
-## 📸 Preview
-
-*(Add a screenshot here later)*
-
----
 
 ## 🚀 Live Demo
 
