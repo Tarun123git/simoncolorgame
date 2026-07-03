@@ -3,12 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
+    margin: 0;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(135deg, #edf2f7, #d6e4f0);
 }
@@ -16,11 +13,11 @@ body {
 .main {
     width: 80%;
     max-width: 900px;
-    background: white;
+    margin: 40px auto;
     padding: 30px;
+    background: white;
     border-radius: 20px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
 }
 
 h1 {
@@ -134,12 +131,11 @@ footer {
     width: 100%;
     margin-top: 40px;
     padding: 20px;
-    background: #1f2937;
-    color: #ffffff;
+    background: #111827;
+    color: white;
     text-align: center;
     border-top: 4px solid #4f46e5;
 }
-
 footer p {
     margin: 6px 0;
     font-size: 15px;
