@@ -36,7 +36,7 @@ function checkans(idx) {
         }
     }
     else {
-        h2.innerHTML = `<b>GAME OVER!!</b><br>YOUR SCORE WAS ${level - 1} <br> press start again`;
+        h2.innerHTML = `<b>GAME OVER!!</b><br>YOUR SCORE WAS ${Math.max(level - 1, 0)} <br> press start again`;
         let main = document.querySelector(".main");
         main.classList.add("gameover");
         setTimeout(() => {
@@ -62,10 +62,14 @@ function userflash(btn) {
 }
 
 function pressbtn() {
+    if (!started) return;
+
     let btn = this;
     userflash(btn);
+
     let usercolor = btn.getAttribute("id");
     playerseq.push(usercolor);
+
     checkans(playerseq.length - 1);
 }
 function reset() {
