@@ -7,7 +7,7 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #edf2f7, #d6e4f0);
+    background: linear-gradient(135deg, #0f1117, #1a1d29);
 }
 
 .main {
@@ -15,52 +15,52 @@ body {
     max-width: 900px;
     margin: 40px auto;
     padding: 30px;
-    background: white;
+    background: #1a1d29;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,.5);
     text-align: center;
 }
 
 h1 {
     font-size: 42px;
-    color: #222;
+    color: #f4f4f5;
     margin-bottom: 20px;
 }
 
 h2 {
     margin: 20px 0;
-    color: #444;
+    color: #c4c8d4;
 }
 
 h3 {
-    color: #2c3e50;
+    color: #8ab4f8;
     margin-bottom: 10px;
     text-align: start;
     margin-left: 1rem;
 }
 
 .box {
-    background: #f8f9fa;
+    background: #20232f;
     border-radius: 15px;
     padding: 20px;
     margin: 20px auto;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 
 .box p {
     text-align: justify;
     line-height: 1.8;
-    color: #444;
+    color: #c4c8d4;
 }
 
 .rules {
     margin-top: 20px;
     text-align: left;
-    background: #ffffff;
+    background: #1e2130;
     border-left: 6px solid #3b82f6;
     border-radius: 12px;
     padding: 18px 22px;
-    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.4);
 }
 
 .rules ol {
@@ -71,6 +71,7 @@ h3 {
 .rules li {
     margin: 12px 0;
     line-height: 1.6;
+    color: #c4c8d4;
 }
 
 .container {
@@ -84,29 +85,29 @@ h3 {
     width: 140px;
     margin: 12px;
     border-radius: 25px;
-    border: 7px solid #222;
+    border: 7px solid #0f1117;
     cursor: pointer;
-    transition: 0.2s;
 }
 
 .but:hover {
+    transition: transform 0.2s;
     transform: scale(1.05);
 }
 
 .but1 {
-    background: #ff4d94;
+    background: #ff6ba8;
 }
 
 .but2 {
-    background: #4169e1;
+    background: #5b7cff;
 }
 
 .but3 {
-    background: #e63946;
+    background: #ff5a5f;
 }
 
 .but4 {
-    background: #f4a261;
+    background: #ffb066;
 }
 
 .gameflash {
@@ -123,7 +124,7 @@ h3 {
     margin-top: 25px;
     font-size: 22px;
     font-weight: bold;
-    color: #1d3557;
+    color: #8ab4f8;
 }
 
 .gameover {
@@ -136,7 +137,7 @@ h3 {
     font-size: 18px;
     font-weight: 600;
     border-radius: 30px;
-     background: linear-gradient(135deg, #3b82f6, #2563eb);
+     background: linear-gradient(135deg, #4f7fff, #3b5fe0);
     color: white;
     border: none;
     cursor: pointer;
@@ -146,7 +147,7 @@ h3 {
 #startBtn:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(37, 99, 235, 0.45);
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    background: linear-gradient(135deg, #3b5fe0, #2f4fc7);
 }
 
 #startBtn:active {

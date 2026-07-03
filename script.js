@@ -106,4 +106,23 @@ gsap.from(".box,h2,h3", {
     ease: "power3.out",
     delay:0.6
 });
+gsap.from(".but1, .but3", {
+    opacity: 0,
+    x: -200,
+    rotation: -270,
+    duration: 1.2,
+    stagger: 0.2,
+    delay: 1.2,
+    ease: "back.out(2)"
+});
+ 
+gsap.from(".but2, .but4", {
+    opacity: 0,
+    x: 200,
+    rotation: 270,
+    duration: 1.2,
+    stagger: 0.2,
+    delay: 1.2,
+    ease: "back.out(2)"
+});
 
