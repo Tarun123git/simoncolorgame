@@ -6,12 +6,12 @@ let started = false;
 let level = 0;
 let highscore = 0;
 let high = document.querySelector(".maxscore")
-document.addEventListener("keypress", function () {
-    if (started == false) {
+document.querySelector("#startBtn").addEventListener("click", function () {
+    if (!started) {
         started = true;
         levelup();
     }
-})
+});
 
 function levelup() {
     playerseq = []
@@ -36,7 +36,7 @@ function checkans(idx) {
         }
     }
     else {
-        h2.innerHTML = `<b>GAME OVER!!</b><br>YOUR SCORE WAS ${level - 1} <br> press any key to start again`;
+        h2.innerHTML = `<b>GAME OVER!!</b><br>YOUR SCORE WAS ${level - 1} <br> press start again`;
         let main = document.querySelector(".main");
         main.classList.add("gameover");
         setTimeout(() => {

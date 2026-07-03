@@ -18,6 +18,7 @@ body {
     background: white;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    text-align: center;
 }
 
 h1 {
@@ -127,6 +128,29 @@ h3 {
     background: #ff4d4d !important;
     transition: background-color 0.2s;
 }
+#startBtn{
+    margin: 20px 0;
+    padding: 12px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+     background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.35);
+    transition: all 0.3s ease;
+}
+#startBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.45);
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+#startBtn:active {
+    transform: scale(0.96);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
 footer {
     width: 100%;
     margin-top: 40px;
@@ -208,5 +232,11 @@ footer strong {
 
     footer p {
         font-size: 13px;
+    }
+     #startBtn {
+        width: 80%;
+        max-width: 280px;
+        font-size: 16px;
+        padding: 10px 20px;
     }
 }
