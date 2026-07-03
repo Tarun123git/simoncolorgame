@@ -83,3 +83,27 @@ let allbtns = document.querySelectorAll(".but");
 for (btn of allbtns) {
     btn.addEventListener("click", pressbtn);
 }
+//gsap
+gsap.from("#startBtn", {
+    y:100,
+    opacity: 0,
+    scale: 0.8,
+    duration: 1,
+});
+gsap.from("h1", {
+    y: -50,
+    opacity: 0,
+    scale: 0.8,
+    duration: 1,
+    stagger: 0.2,
+    ease: "back.out(1.7)",
+    delay: 0.8
+});
+gsap.from(".box,h2,h3", {
+    x: -60,
+    opacity: 0,
+    duration: 2,
+    ease: "power3.out",
+    delay:0.6
+});
+
