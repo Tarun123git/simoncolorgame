@@ -16,11 +16,11 @@ document.querySelector("#startBtn").addEventListener("click", function () {
 function levelup() {
     playerseq = []
     level++;
-    if (level > highscore) {
-        highscore = level;
+    if (level - 1 > highscore) {
+        highscore = level - 1;
     }
-    h2.innerHTML = `Level ${level}`;
-    high.innerHTML = `<h3>HighScore ${highscore - 1}</h3>`
+
+    high.innerHTML = `<h3>High Score: ${highscore}</h3>`;
     //producing random color first
     let randIdx = Math.floor(Math.random() * 4);
     let randColor = colors[randIdx];
