@@ -130,6 +130,25 @@ h3 {
     background: #ff4d4d !important;
     transition: background-color 0.2s;
 }
+footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+    background: #1f2937;
+    color: #ffffff;
+    text-align: center;
+    border-top: 4px solid #4f46e5;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+footer strong {
+    color: #facc15;
+}
 /* ===========================
    Mobile Devices
 =========================== */
@@ -186,5 +205,12 @@ h3 {
 
     .maxscore h3 {
         font-size: 18px;
+    }
+     footer {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 13px;
     }
 }
