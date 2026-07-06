@@ -120,7 +120,7 @@ h3 {
     transform: scale(0.96);
 }
 
-.maxscore {
+.maxscore .score {
     margin-top: 25px;
     font-size: 22px;
     font-weight: bold;

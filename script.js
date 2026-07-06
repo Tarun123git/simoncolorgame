@@ -6,6 +6,7 @@ let started = false;
 let level = 0;
 let highscore = 0;
 let high = document.querySelector(".maxscore")
+let score=document.querySelector(".score");
 document.querySelector("#startBtn").addEventListener("click", function () {
     if (!started) {
         started = true;
@@ -19,8 +20,8 @@ function levelup() {
     if (level - 1 > highscore) {
         highscore = level - 1;
     }
-
     high.innerHTML = `<h3>High Score: ${highscore}</h3>`;
+    score.innerHTML = `<h3>Score: ${level-1}</h3>`;
     //producing random color first
     let randIdx = Math.floor(Math.random() * 4);
     let randColor = colors[randIdx];
